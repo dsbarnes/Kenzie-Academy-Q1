@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+.cell{
+    display: inline-block;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+div[data-type='W']{
+    background-color: black;
+}
+div[data-type='F']{
+    background-color: white;
+}
+div[data-type="X"]{
+    background-color: green;
+}
+div[data-type='S']{
+    background-color: blue;
+}

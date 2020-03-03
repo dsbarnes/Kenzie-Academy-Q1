@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Combat Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="gameGrid">
+        <div id='characterSelect'>
+            <p>Character Select</p>
+            <button id='Warrior' class="character">Warrior</button><br>
+            <button id='Mage' class="character">Mage</button>
+        </div>
+    
+        <div id='enemySelect'>
+            <p>Difficulty Select</p>
+            <button id='easyEnemy' class="enemy">Easy Enemy</button><br>
+            <button id='hardEnemy' class="enemy">Hard Enemy</button>
+        </div>
+        
+        <div id="characterSection"></div>
+        <div id="enemySection"></div>
+
+        
+        <div id='attackButtons'>
+            <!-- <p>Attack Buttons</p> -->
+            <button id='physical' onclick='myCharacter.physicalAttack(myEnemy)'>Physical Attack</button>
+            <button id='magic' onclick='myCharacter.magicAttack(myEnemy)'>Magic Attack</button>
+            <button id='special' onclick='myCharacter.specialAttack(myEnemy)'>Special Attack</button>
+        </div>
+
+        <div id='combatHistory'>Combat History</div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

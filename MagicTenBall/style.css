@@ -1,0 +1,78 @@
+/* This is the general styling for the things on the page */
+#top{
+    background-color: #f7f5f0;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#top p:last-child{
+    margin: 0px;
+    padding-bottom:50px;
+}
+
+#bottom{
+    background-color: #f7f5f0;
+    text-align: center;
+
+}
+#bottom p:first-child{
+    margin-top:0px;
+}
+#bottom p:last-child{
+    padding-bottom: 100px;
+}
+#ballContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #f7f5f0;
+}
+#answerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 50%, #1c2852, #f7f5f0 42%, #e6dbc7 75%, #1c2852 0%);
+    
+    height: 0px;
+    opacity: 0;
+}
+#answerText{
+    font-family: 'Courier New', Courier, monospace;
+    color: #f5f5f5;
+    font-size: 2.5em;
+
+    
+    opacity: 0;
+}
+
+/* This is the animation stuff */
+.shake{
+    animation: shake 1s;
+}
+.fadeOut{
+    animation: fadeOut 1s forwards;
+}
+.fadeOutAnswer{
+    animation: fadeOut 1s;
+}
+.fadeInFast{
+    animation: fadeIn 1s forwards;
+}
+.fadeInSlow{
+    animation: fadeIn 3s ease-in forwards;
+}
+.ballFadeIn{
+    animation: fadeIn 1s forwards;
+}
+@keyframes shake {
+    10%, 90% {transform: translate3d(-1px, 0, 0);}
+    20%, 80% {transform: translate3d(2px, 0, 0);}
+    30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+    40%, 60% {transform: translate3d(4px, 0, 0);}
+}
+@keyframes fadeIn {
+    0%{ opacity: 0;}
+    100%{ opacity: .85;}
+}
+@keyframes fadeOut {
+    0%{ opacity: 1;}
+    100%{opacity: 0;}
+}

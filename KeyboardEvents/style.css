@@ -1,0 +1,10 @@
+#box { 
+    width: 100px; 
+    height: 100px; 
+    position: absolute; 
+    /* background-image: url(90s.jpg); */
+    background-color: gray;
+    /* left: 200px;  */
+    /* top: 200px;  */
+
+}

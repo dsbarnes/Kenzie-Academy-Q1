@@ -1,0 +1,48 @@
+*{box-sizing: border-box}
+body{
+    display: grid;
+    grid-template-columns: 2;
+}
+#selectionsContainer{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    grid-column-start: 1;
+    border: 1px solid blueviolet;
+    width: 300px;
+    text-align: center;
+}
+#boardContainer{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    grid-column-start: 2;
+    border: 1px solid goldenrod;
+    width: 750px;
+    text-align: center;
+}
+#playerSummon, #enemySummon{
+    height: 50px;
+    width: 50px;
+    border: 1px solid blue;
+    position: relative;
+    left: 150px;
+}
+#enemySummon{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+#combatButtons{
+    grid-row-start: 3;
+}
+
+#combatHitsoryContainer{
+    border: 1px solid orchid;
+    width: 300px;
+}
+#combatHitsoryContainer p{
+    font-size: 12px;
+}
+#characterBoard{
+    grid-row-start: 2;
+}

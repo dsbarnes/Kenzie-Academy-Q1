@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action='./api/users' method="POST">
+        <p>Please Fill out all avaliable fields:</p> 
+        <br><br>
+        
+        <fieldset>
+            <input id="username" type="text" placeholder='Username' autofocus><br>
+            <input id="email" type="text" placeholder='Email'><br>
+            <input id="password" type="text" placeholder="password"><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <p>Mobile Phone:</p>
+            <input id="mobilePhone" type="number" placeholder="1239990000">
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <p>Homepage or Social Media:</p>
+            <input id='homepage' type="url" placeholder="https://">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <p>Preferred Communication Method:</p>
+            <input class='preferredCommunication' type="checkbox" data-name="Cell Phone"> Cell Phone <br>
+            <input class='preferredCommunication' type="checkbox" data-name="eMail"> eMail <br>
+            <input class='preferredCommunication' type="checkbox" data-name="Social Media"> Social Media <br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <p>Devices:</p>
+            <input type="checkbox" class="devices" data-name='iOS'> iOS <br>
+            <input type="checkbox" class="devices" data-name='Android'> Android <br>
+            <input type="checkbox" class="devices" data-name='Mac'> Mac <br>
+            <input type="checkbox" class="devices" data-name='Windows'> Windows <br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <p>User Type:</p>
+            <input type="radio" class="userType" data-name="User">User<br>
+            <input type="radio" class="userType" data-name="Admin" disabled>Admin<br>
+            <input type="radio" class="userType" data-name="Mod" disabled>Mod<br>
+        </fieldset>
+        <br>
+
+
+        <fieldset id='advancedWidget'>
+            <p>How Great Is This Form?</p> <br>
+            0 <input oninput="x.value=a.value" type="range" id="a" value="0">100 
+            <output name='x' for="a">100 Please!</output>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <button id='resetButton'>Reset</button>
+            <button id="submitButton" type='submit' >Submit</button>
+        </fieldset>
+        <br>
+
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>

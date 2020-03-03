@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>If the board is green, click a cell and get a question</p>
+    <p>If the board is red, you must either answer the question, or pass</p>
+    <p>Answering the question correctly will get you points</p>
+    <p>Answering incorrectly will subtract points</p>
+    <p>Passing will not effect points</p>
+
+    <main>
+        <button id='answerButton'>Answer</button>
+        <input type="text" id='answerInput'>
+        <button id='passButton'>Pass</button>
+        <h2 id='myPoints'>0</h2>
+    </main>
+
+    <p>The Correct Answer Was:</p>
+    <p id='lastCorrectAnswer'></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
